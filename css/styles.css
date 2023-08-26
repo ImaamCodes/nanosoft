@@ -1,0 +1,53 @@
+body {
+    font-family: system-ui;
+    overflow-x: hidden;
+    padding: 0;
+}
+.page-content {
+    margin-top: 100px;
+}
+#go-up {
+    border-radius: 100%;
+    width: fit-content;
+    background: linear-gradient(to bottom right, rgb(0, 0, 214),navy);
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    color: white !important;
+    text-decoration: none;
+}
+#go-upp {
+    border-radius: 100%;
+    width: fit-content;
+    background: linear-gradient(to bottom right, rgb(0, 0, 214),navy);
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    color: white !important;
+    text-decoration: none;
+}
+#go-up a, #go-upp a {
+    color: white !important;
+    text-decoration: none;
+    padding: 20px;
+}
+iframe {
+    display: block;
+}
+#iframe-container-navbar {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    padding-top: 82.72327964;
+}
+#iframe-container-navbar iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: 113px;
+}

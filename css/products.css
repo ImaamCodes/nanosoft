@@ -1,0 +1,121 @@
+#product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-card {
+    box-shadow: 20px 20px 15px 13px rgb(156, 52, 26);
+    border-radius: 20px;
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 270px;
+
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+.product-name, .product-img, .product-desc, .product-cost, .stocks {
+    font-family: "Georama", Helvetica, Arial, sans-serif;
+}
+p:is(.product-cost)::before {
+    content: "Starting at: ";
+}
+p.stocks[data-stockage="relatively-few"]::after {
+    color: rgb(156, 52, 26);
+    content: "Barely in-stock";
+}
+p.stocks[data-stockage="out-of-stock"]::after {
+    color: red;
+    content: "Out of stock";
+}
+p.stocks[data-stockage="okay"]::after {
+    color: rosybrown;
+    content: "Half-stock";
+}
+p.stocks[data-stockage="relatively-good"]::after {
+    color: teal;
+    content: "Fairly high stock";
+}
+p.stocks[data-stockage="good"]::after {
+    color: green;
+    content: "High stock";
+}
+button.add-to-cart::after {
+    content: "Add to cart";
+}
+button.features::after {
+    content: "Features";
+}
+button.prct-prcd {
+    transition: all linear 750ms;
+    border: lawngreen ridge 4px;
+    border-radius: 5px 8px 8px;
+    background-color: mediumspringgreen;
+    height: 100px;
+    font-family: Audiowide, Tahmoa, Verdena, sans-serif;
+    font-size: 22px;
+    width: 48%;
+    display: inline-block;
+}
+button.prct-prcd:not([disabled]):hover {
+    border: rgb(31, 59, 3) ridge 4px;
+    background-color: rgb(0, 73, 45);
+    color: whitesmoke;
+}
+.cart {
+    width: 19%;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    position: fixed;
+    max-height: 39%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    top: 0.5%; right: 0.5%;
+}
+.cartItem {
+    background-color: #eee;
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 9px;
+    font-size: 17px;
+    margin-bottom: 6px;
+    text-align: left;
+    align-items: center;
+}
+.cartItem .title {
+    font-weight: 600;
+}
+.cartItem .cost::before {
+    content: "$";
+}
+.cartItem .material-icons {
+    cursor: pointer;
+    color: darkslategrey;
+}
+.cart h1 {
+    font-family: Dekko;
+    font-size: 25px;
+}
+.totals {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+p#total::before {
+    content: "$";
+}
+p#total {
+    font-weight: 700;
+    color: darkgoldenrod;
+}
+.cart hr {
+    border: solid 1px darkblue;
+}

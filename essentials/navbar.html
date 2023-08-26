@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just a useless navigation bar</title>
+    <link rel="stylesheet" type="text/css" href="../css/nav-essentials.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Baumans|Bubblegum+Sans|Dekko|Faster+One|Georama|Geostar|Gugi|Iceberg|Iceland|Langar|Monofett|Monoton|Poppins|Rampart+One|Zen+Tokyo+Zoo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body style="color: antiquewhite;">
+    <ul>
+        <li><img src="../images/thumbnails/NLogo.jpg" alt="Logo" width="35px" style="border-radius: 100%; background: transparent !important;"></li>
+        <li><a href="../index.html" target="_parent">Home</a></li>
+        <div class="subnav">
+            <li class="subnav-btn"><a href="javascript: void(0)">Ceo</a></li>
+            <div class="subnav-content">
+                <li><a href="../ceo/index.html" target="_parent">Ceo Biography</a></li>
+                <li><a href="../ceo/facts/ranks.html" target="_parent">Guiness Book of World Records - Abdullaah Abdulghaniyy</a></li>
+                <li><a href="../ceo/facts/contributions.html" target="_parent">CEO Contributions</a></li>
+            </div>
+        </div>
+        <div class="subnav">
+            <li class="subnav-btn"><a href="javascript: void(0)" target="_parent">Products</a></li>
+            <div class="subnav-content">
+                <li><a href="../products/automobiles.html" target="_parent">Automobiles</a></li>
+            </div>
+        </div>
+    </ul>
+    <div id="sooo">Sub navigation bar area</div>
+    <script>
+        var as = document.getElementsByTagName("a");
+        for (var i = 0; i < as.length; i++) {
+            as[i].setAttribute("target", "_parent");
+        }
+    </script>
+</body>
+</html>

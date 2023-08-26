@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10">
+    <title>Nanosoft Cruise4All - Automobiles</title>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../../css/automobile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Baumans|Bubblegum+Sans|Dekko|Faster+One|Georama|Geostar|Gugi|Iceberg|Iceland|Langar|Monofett|Monoton|Poppins|Rampart+One|Zen+Tokyo+Zoo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="../../images/thumbnails/favicon.ico" type="image/x-icon">
+    
+</head> 
+<body>
+    <div id="iframe-container-navbar">
+        <iframe id="ab" src="../../essentials/navbar.html" width="112%" height="113px" style="background-color: rgb(11, 74, 78); border: none; margin: -10px; z-index: 100; position: fixed; top: 0; left: 0; width: 100%;"></iframe>
+    </div>
+    <div class="page-content">
+        <h1>Nanosoft Cruise4All</h1>
+        <div class="pt2"></div>
+    </div>
+    <script src="../../js/automobile.js"></script>
+    <script>
+        var specs = {
+            name: "cruise4all",
+            types: [["E", "Emerald"], ["P", "Pearl"], ["PP", "Pearl Premium"], ["G", "Gold"], ["GS", "Gold Sport"], ["GSS", "Super Sport"]],
+            tspeed: [325, 330, 350, 347, 355, 370],
+            accel: [2.0, 1.9, 1.6, 1.75, 1.5, 1.3],
+            range: [750, 755, 755, 755, 770, 810],
+            recharge1: [12, 14, 14, 14, 18, 22],
+            recharge2: [24, 28, 28, 28, 37, 45],
+            recharge3: [48, 56, 56, 57, 74, 90],
+            space: [2.4, 2.5, 2.8, 2.65, 2.7, 2.7],
+            wheelbase: [3.4, 3.5, 3.8, 3.65, 3.6, 3.6],
+            gClearance: [30, 34, 37, 35.5, 37, 34],
+            hp: [750, 770, 780, 772, 790, 805]
+        };
+        work();
+    </script>
+</body>
+</html>

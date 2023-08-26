@@ -1,0 +1,51 @@
+table {
+    width: 100%;
+    text-align: center;
+    border: 5px double coral;
+}
+h1 {
+    font-family: Zen Tokyo Zoo;
+    font-size: 45px;
+    text-align: center;
+    background-color: midnightblue;
+    color: antiquewhite;
+}
+tbody {
+    font-family: Gugi;
+}
+thead, th {
+    font-family: Bubblegum Sans;
+    font-weight: 300;
+    background-color: cornflowerblue;
+    margin: 0;
+    font-size: 25px;
+}
+th:first-child {
+    background-color: brown;
+}
+td {
+    background-color: darkgoldenrod;
+    font-weight: 400;
+}
+.pt2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.pimg {
+    position: relative;
+}
+#ppImg {
+    width: 401px;
+    min-height: 100%;
+}
+#aTc {
+    background-image: linear-gradient(to bottom, royalblue, navy);
+    color: cornsilk;
+    border-radius: 100%;
+    padding: 20px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
